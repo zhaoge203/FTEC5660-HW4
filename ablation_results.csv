@@ -1,0 +1,10 @@
+variant,change,chunks,valid_nonempty,recall,kept,rejected,answer_accuracy
+B0,BeautifulSoup get_text + Recursive splitter + naive full-corpus BM25,249,1.000000,0.260870,1.000000,0.000000,0.483333
+V1,+ hw4.table_to_text table replacement only,291,1.000000,0.260870,1.000000,0.000000,0.416667
+V2,+ hw4 section/table-row chunks and contextual headers only,2555,1.000000,0.260870,1.000000,0.000000,0.416667
+V3,+ query parsing + company/doc_type/exact-year metadata filtering only,2555,1.000000,0.934783,1.000000,0.000000,0.950000
+V4,+ hw4._tokens corpus/query tokenizer only,2555,1.000000,0.978261,1.000000,0.000000,0.966667
+V5,+ concept synonym expansion only,2555,1.000000,1.000000,1.000000,0.000000,1.000000
+V6,+ overlap/table/exact-year adjusted_score ranking boosts only,2555,1.000000,1.000000,1.000000,0.000000,1.000000
+V7,+ per-company comparison quotas (2+2+global best fifth) only,2555,1.000000,1.000000,1.000000,0.000000,1.000000
+V8,direct hw4.retrieve; + final abstention only,2555,1.000000,1.000000,1.000000,1.000000,1.000000
